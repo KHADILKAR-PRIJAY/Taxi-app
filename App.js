@@ -12,6 +12,7 @@ import {
 import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Signup from './Screens/Signup';
+import LoginScreen from './Screens/LoginScreen';
 
 
 
@@ -39,6 +40,13 @@ export default function App() {
           component={Signup}
           options={{ headerShown: false }}
         />
+
+<Stack.Screen
+          name="LoginScreen"
+          component={LoginScreen}
+          options={{ headerShown: false }}
+        />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
