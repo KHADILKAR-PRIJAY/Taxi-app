@@ -11,8 +11,8 @@ function ForgotPass() {
     const navigation = useNavigation();
     return (
 
-        <
-        View style = { styles.container } >
+        
+        <View style = { styles.container } >
 
         <
         View style = { styles.Middle } >
