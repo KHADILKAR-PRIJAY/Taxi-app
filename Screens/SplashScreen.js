@@ -1,22 +1,35 @@
-import React, { Component } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { SafeAreaView, StyleSheet, Text, View,ImageBackground, Image } from "react-native";
+import { useNavigation } from '@react-navigation/native';
+import {useEffect} from "react";
 
-class Splash extends Component {
-  constructor(props) {
-    super(props);
-
+function Splash(){
+  const navigation = useNavigation();
+  useEffect(()=>{
     setTimeout(() => {
-      props.navigation.navigate("Login");
-    }, 3000);
-  }
+      navigation.navigate("LoginScreen");
+    }, 4000);
+  });
+return (
+      <SafeAreaView style={styles.container}>
+      <ImageBackground
+        style={{ flex: 1 }}
+        source={require('../assets/SplashScreen.png')}
+      >
+        <View style={styles.container}>
 
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.title}>Taxi App</Text>
-      </View>
+        </View>
+      </ImageBackground>
+    </SafeAreaView>
     );
-  }
 }
 
+
+
 export default Splash;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  }
+});
