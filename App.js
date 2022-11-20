@@ -12,14 +12,14 @@ import { DefaultTheme, NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 import MapView from 'react-native-maps';
-import Splash from './Screens/SplashScreen';
-import LoginScreen from './Screens/LoginScreen';
-import Signup from './Screens/Signup';
-import Option from './Screens/Option';
-import ForgotPass from './Screens/ForgotPass';
-import RiderHome from './Screens/RiderHome';
-import DriverHome from './Screens/DriverHome';
-import ChatScreen from './Screens/ChatScreen';
+import Splash from './Src/Screens/SplashScreen';
+import LoginScreen from './Src/Screens/LoginScreen';
+import Signup from './Src/Screens/Signup';
+import Option from './Src/Screens/Option';
+import ForgotPass from './Src/Screens/ForgotPass';
+import RiderHome from './Src/Screens/RiderHome';
+import DriverHome from './Src/Screens/DriverHome';
+import ChatScreen from './Src/Screens/ChatScreen';
 
 
 
