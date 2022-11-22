@@ -53,3 +53,20 @@ let get_MY_Trip_Posts = () => {
         });
     });
 };
+
+let DeletePost = (uid) => {
+    return new Promise((resolve, reject) => {
+      firebase
+        .firestore()
+        .collection("Trip_Posts")
+        .doc(uid)
+        .delete()
+        .then(() => {
+          resolve("Deleted Successfully");
+        })
+        .catch((error) => {
+          reject(error);
+        });
+    });
+  };
+  export { Post_Trip_Func, get_MY_Trip_Posts, DeletePost };
