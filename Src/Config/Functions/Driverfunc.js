@@ -54,6 +54,24 @@ let get_MY_Trip_Posts = () => {
     });
 };
 
+let get_All_Trip_Posts = () => {
+    return new Promise((resolve, reject) => {
+      let Posts = [];
+      firebase
+        .firestore()
+        .collection("Trip_Posts")
+        .onSnapshot((snap) => {
+          snap.forEach((doc) => {
+            let post = doc.data();
+            post.id = doc.id;
+            Posts.push(post);
+            console.log(post, "ccc");
+            resolve(Posts);
+          });
+        });
+    });
+  };
+
 let DeletePost = (uid) => {
     return new Promise((resolve, reject) => {
       firebase
