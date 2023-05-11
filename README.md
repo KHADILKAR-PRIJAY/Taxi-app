@@ -15,6 +15,8 @@ Overall, the "Fanshawe Carpooling" app aims to reduce traffic congestion, save s
 - The app is built using React Native, a popular open-source framework for developing cross-platform mobile applications, and it utilizes a Firebase database for storing and managing user data.
 - The app allows students to create profiles, search for potential carpooling partners based on their location and schedule, and communicate with other users to arrange rides.
 - Users can create ride offers or request rides from others, and the app will suggest potential matches based on factors such as location, destination, and schedule. 
+- After successfully booking the trip can view booking status (i.e: accepted/rejected/pending) on their status screen.
+- Riders can delete the previous trip or edit the details regarding any changes.
 
 <br />
 
@@ -23,7 +25,7 @@ Overall, the "Fanshawe Carpooling" app aims to reduce traffic congestion, save s
 <img src="https://github.com/KHADILKAR-PRIJAY/Taxi-app/assets/86222915/c4c63909-eefb-4428-9199-247476714f9d" width=80%>
 <br />
 
-## Driver Flow
+## Driver Flow 👱
 
 ### 1. Signup and Login
 <p float="left">
@@ -46,8 +48,10 @@ Overall, the "Fanshawe Carpooling" app aims to reduce traffic congestion, save s
 <img src="https://github.com/KHADILKAR-PRIJAY/Taxi-app/assets/86222915/e3aec3d6-6499-4ddb-9ad1-0c2a80b67738" width=200>
 <img src="https://github.com/KHADILKAR-PRIJAY/Taxi-app/assets/86222915/eeb9f80a-e3ee-4859-b997-9e6e0290ffae" width=200>
 
+<br />
 
-## Rider Flow
+## Rider Flow💁
+
 ### 1. Select a trip
 <img src="https://github.com/KHADILKAR-PRIJAY/Taxi-app/assets/86222915/155ed82d-74b5-4cb0-9227-2a447aefbb37" width=200>
 
